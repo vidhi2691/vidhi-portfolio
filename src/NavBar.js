@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import Banner from './banner.jpg'
-import { ClassNames } from '@emotion/react';
-import Profile from './profile.png'
-import Linkedin from './linkedin.png'
-import Gmail from './gmail.png'
-
-
+import Banner from './banner.jpg';
+import Profile from './profile.png';
+import Linkedin from './linkedin.png';
+import Gmail from './gmail.png';
 
 class NavBar extends Component {
   render() {
     return (
       <div>
-        <img className='banner' src={Banner} />
+        <img className='banner' src={Banner} alt="banner"/>
       <div className="profile-main">
         <div>
-        <img className='profile' src={Profile} />
+        <img className='profile' src={Profile} alt="profile"/>
         </div>
         <div className="aboutMe">
         <h2>About Me:</h2>
@@ -24,8 +21,8 @@ class NavBar extends Component {
         </div>
       </div>
       <div className="connect">
-        <a href="https://www.linkedin.com/in/vidhi-singh-22410b30/" target="_blank"><img src={Linkedin} /></a>
-        <a href="mailto:vidhisingh2691@gmail.com" target="_blank"><img className="gmail" src={Gmail} /></a>
+        <a href="https://www.linkedin.com/in/vidhi-singh-22410b30/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="linkedin"/></a>
+        <a href="mailto:vidhisingh2691@gmail.com" target="_blank" rel="noreferrer"><img className="gmail" src={Gmail} alt="gmail"/></a>
       </div>
       </div>
     );
